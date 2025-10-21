@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ala Bensabra | Portfolio</title>
+  <meta name="description" content="ENSIA 3rd-year student; web development; HTML, CSS, Java; UI design; Figma; Git" />
+  <style>
+    :root{
+      --bg:#fff7fb;           /* pastel pink */
+      --card:#ffffff;         /* white cards */
+      --ink:#512a3d;          /* plum text */
+      --muted:#7a5165;        /* muted text */
+      --accent:#ff6fa9;       /* hot pink accent */
+      --accent-2:#ffd6e7;     /* light accent */
+      --ring:#ffc2d9;         /* focus ring */
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#20141c; --card:#2b1a24; --ink:#fbe7f1; --muted:#e9c9d7; --accent:#ff8fbf; --accent-2:#3a2230; --ring:#8a435f; }
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:ui-rounded, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Color Emoji", sans-serif; color:var(--ink); background:radial-gradient(1200px 1200px at 90% -20%, var(--accent-2), transparent 60%), var(--bg);}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .wrap{max-width:960px;margin-inline:auto;padding:24px}
+    header{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:20px}
+    .id-block{display:flex;gap:16px;align-items:center}
+    .avatar{width:84px;height:84px;border-radius:50%;border:4px solid var(--accent-2);object-fit:cover;box-shadow:0 10px 30px rgba(255,111,169,.25)}
+    .title h1{font-size:clamp(24px,4vw,36px);margin:0 0 4px}
+    .title p{margin:0;color:var(--muted)}
+
+    .toolbar{display:flex;gap:8px;align-items:center}
+    .btn{border:0;background:var(--accent);color:white;padding:10px 14px;border-radius:999px;font-weight:600;cursor:pointer;box-shadow:0 10px 24px rgba(255,111,169,.35);transition:transform .08s ease}
+    .btn:hover{transform:translateY(-1px)}
+
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 12;background:var(--card);border-radius:24px;padding:20px;box-shadow:0 10px 28px rgba(81,42,61,.08);border:1px solid var(--accent-2)}
+    .card h2{margin:0 0 12px;font-size:clamp(18px,3vw,22px)}
+    .card p{margin:0 0 10px}
+
+    @media (min-width:760px){ .span-6{grid-column:span 6} }
+
+    /* cute list pills */
+    .pill-list{display:flex;flex-wrap:wrap;gap:10px}
+    .pill{background:linear-gradient(180deg, var(--accent-2), #fff);border:1px solid var(--ring); color:var(--ink); padding:8px 12px; border-radius:999px; font-weight:600}
+
+    /* floating hearts */
+    .floaty{position:fixed; inset:0; pointer-events:none; overflow:hidden}
+    .heart{position:absolute; font-size:14px; opacity:.35; animation:rise 10s linear infinite}
+    @keyframes rise{ to { transform: translateY(-110vh) rotate(360deg); opacity:0 } }
+
+    /* link buttons */
+    .links{display:flex; gap:10px; flex-wrap:wrap}
+    .link-btn{display:inline-flex; align-items:center; gap:8px; border:1px solid var(--ring); background:#fff0fa; padding:10px 12px; border-radius:12px; font-weight:600}
+
+    /* footer */
+    footer{margin-top:24px; color:var(--muted); text-align:center}
+    .small{font-size:12px}
+
+    /* focus states */
+    :focus-visible{outline:3px solid var(--ring); outline-offset:4px; border-radius:12px}
+    body ul{list-style:none;padding-left:0}
+  </style>
+</head>
+<body>
+  <div class="floaty" aria-hidden="true" id="floaty"></div>
+  <div class="wrap">
+    <header>
+      <div class="id-block">
+        <img class="avatar" src="assets\me.jpg" alt="Ala Bensabra avatar" />
+        <div class="title">
+          <h1>Ala Bensabra</h1>
+          <p>I’m a 3rd‑year student at ENSIA. I studied at Nasri Ramdane high school, where I earned my Baccalauréat in 2023 before joining ENSIA. I enjoy designing clean, friendly interfaces and turning them into accessible, responsive pages.</p>
+        </div>
+      </div>
+      <div class="toolbar">
+        <a class="btn" href="index.html">← Team</a>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card span-6" id="skills">
+        <h2>Skills</h2>
+        
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">Java</span>
+          <br><br>
+          <span class="pill">UI Design</span>
+          <br>
+          <br>
+          <span class="pill">Figma</span>
+          <br>
+          <br>
+          <span class="pill">Git</span>
+          <br>
+          <br>
+          <span class="pill">GitHub Pages</span>
+          <br>
+          <br>
+          <span class="pill">Responsive Layouts</span>
+        
+      </section>
+
+      <section class="card span-6" id="links">
+        <h2>Links</h2>
+        
+          <a class="link-btn" href="https://www.linkedin.com/in/ala-bensabra" target="_blank" rel="noopener">🔗 LinkedIn</a>
+          <a class="link-btn" href="https://instagram.com/ala.bens" target="_blank" rel="noopener">📸 Instagram</a>
+          <a class="link-btn" href="mailto:ala.bensabra@ensia.edu.dz">✉️ Email</a>
+          <!-- Optional: Add LinkedIn, Portfolio, Email -->
+          <!-- <a class="link-btn" href="https://www.linkedin.com/in/your-handle/" target="_blank" rel="noopener">🔗 LinkedIn</a> -->
+        </div>
+      </section>
+
+      <section class="card span-12" id="projects">
+        <h2>Featured Work</h2>
+        <p>I did some small projects like : Cinverse a virtual cinema website where people can enjoy watching movies , Portoflio optimization another website for managing people's inverstements and incomes. </p>
+        <ul>
+          <li><!-- Example: Cute Landing Page (HTML/CSS) — brief line about what you built. --></li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <p class="small">© <span id="year"></span> Ala Bensabra</p>
+    </footer>
+  </div>
+
+  <script>
+    // Update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Generate floating hearts for a cute vibe
+    const floaty = document.getElementById('floaty');
+    const hearts = ['❤','💗','💖','💞','🌸','✨'];
+    function spawnHeart(){
+      const h = document.createElement('div');
+      h.className = 'heart';
+      h.textContent = hearts[Math.floor(Math.random()*hearts.length)];
+      const left = Math.random()*100; // vw
+      const delay = Math.random()*10; // s
+      const size = 12 + Math.random()*20; // px
+      h.style.left = left + 'vw';
+      h.style.bottom = '-10vh';
+      h.style.fontSize = size + 'px';
+      h.style.animationDelay = delay + 's';
+      floaty.appendChild(h);
+      setTimeout(()=>h.remove(), 12000);
+    }
+    for(let i=0;i<24;i++){ spawnHeart(); }
+    setInterval(spawnHeart, 1200);
+  </script>
+</body>
+</html>
