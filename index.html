@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Portfolio | ENSIA AI Project</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1c1c1c, #2b2b2b);
+      color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+    }
+
+    header h1 {
+      color: #ff80ab;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #cccccc;
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      width: 90%;
+      max-width: 1000px;
+      padding-bottom: 60px;
+    }
+
+    .member-card {
+      background: #2f2f2f;
+      border-radius: 20px;
+      padding: 30px 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .member-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .member-card h2 {
+      color: #ff80ab;
+      margin-bottom: 8px;
+      font-size: 1.4em;
+    }
+
+    .role {
+      font-size: 0.95em;
+      color: #aaaaaa;
+      margin-bottom: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      background: #ff80ab;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    a:hover {
+      background: #f06292;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaaaaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Team Portfolio</h1>
+    <p>
+      A collaborative project by ENSIA Artificial Intelligence students — showcasing our skills,
+      creativity, and teamwork in web development.
+    </p>
+  </header>
+
+  <section class="team-container">
+    <div class="member-card">
+      <h2>Selsabila Guettaf Temam</h2>
+      <div class="role">Team Leader</div>
+      <a href="selsabila-guettaftemam.html" target="_blank">View Profile</a>
+    </div>
+
+    <div class="member-card">
+      <h2>Lina Sekfali</h2>
+      <div class="role">Team Member</div>
+      <a href="lina-sekfali.html" target="_blank">View Profile</a>
+    </div>
+
+    <div class="member-card">
+      <h2>Noussayba Om Salama Chouimet</h2>
+      <div class="role">Team Member</div>
+      <a href="chouimet-noussayba.html" target="_blank">View Profile</a>
+    </div>
+
+    <div class="member-card">
+      <h2>Nihad Meriem Miraoui</h2>
+      <div class="role">Team Member</div>
+      <a href="nihad-meriem-miraoui.html" target="_blank">View Profile</a>
+    </div>
+
+    <div class="member-card">
+      <h2>Ala Bensabra</h2>
+      <div class="role">Team Member</div>
+      <a href="ala-bensabra.html" target="_blank">View Profile</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 ENSIA AI Team | Designed with 💻 and 💡
+  </footer>
+</body>
+</html>
