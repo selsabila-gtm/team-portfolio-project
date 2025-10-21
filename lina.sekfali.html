@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lina Sekfali — Profile</title>
-  <meta name="description" content="Lina Sekfali — 3rd year AI student, web & backend developer." />
+  <meta name="description" content="Lina Sekfali — 3rd year AI student." />
   <style>
     :root{
-      --bg: #0f1724;
-      --card: #0b1220;
-      --accent: #ff6bcb;
+      --bg: #141f31;
+      --card: #122141;
+      --accent: #f567c3;
       --muted: #9aa4b2;
       --glass: rgba(255,255,255,0.03);
       --radius: 14px;
@@ -27,8 +27,18 @@
     }
 
     .avatar{
-      width:120px;height:120px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7f5af0);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:#07101a;
+      width:120px;height:120px;border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),#7f5af0);
+      overflow:hidden;
       box-shadow:0 6px 16px rgba(128,90,236,0.18);
+    }
+
+    .avatar img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:12px;
+      display:block;
     }
 
     h1{margin:0;font-size:22px;letter-spacing:0.2px}
@@ -64,17 +74,15 @@
   <div class="wrap">
     <article class="card" aria-labelledby="name">
       <div style="display:flex;flex-direction:column;align-items:flex-start;gap:12px">
-        <div class="avatar" aria-hidden="true">LS</div>
-        <a class="btn" href="#contact" style="text-decoration:none;color:inherit;">
-          <span class="dot" aria-hidden="true"></span>
-          Contact
-        </a>
+        <div class="avatar" aria-hidden="true">
+          <img src="assets/pictures/lina_sekfali.jpg" alt="Lina Sekfali photo">
+        </div>
       </div>
 
       <div class="right">
         <header>
           <h1 id="name">Lina Sekfali</h1>
-          <p class="lead"> I’m Lina Sekfali, a 20-year-old third-year student at the National Higher School of Artificial Intelligence. I’m passionate about AI, web development, and design. I love creating new ideas, learning modern technologies, and working on projects that combine creativity and innovation..</p>
+          <p class="lead">I’m Lina Sekfali, a 20-year-old third-year student at the National Higher School of Artificial Intelligence. I’m passionate about AI, web development, and design. I love creating new ideas, learning modern technologies, and working on projects that combine creativity and innovation.</p>
         </header>
 
         <section aria-labelledby="skills-heading">
@@ -95,12 +103,11 @@
         <section aria-labelledby="links" style="margin-top:6px">
           <h3 id="links" style="font-size:14px;margin:0;color:#cfe9ff;">Links</h3>
           <ul>
-            <li><strong>GitHub:</strong> <a href="https://github.com/linasek" target="_blank" rel="noopener noreferrer">github.com/your-username</a></li>
-             <li><strong>Email:</strong> <a href="mailto:lina.sekfali@ensia.edu.dz">linasekfali@gmail.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/linasek" target="_blank" rel="noopener noreferrer">github.com/linasek</a></li>
+            <li><strong>Email:</strong> <a href="mailto:lina.sekfali@ensia.edu.dz">lina.sekfali@gmail.com</a></li>
           </ul>
         </section>
 
-        
       </div>
     </article>
   </div>
