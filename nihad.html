@@ -7,7 +7,7 @@
   <meta name="description" content="Portfolio of Nihad — web developer &amp; student" />
   <style>
     :root{
-      --bg:#0f1724; /* dark navy */
+      --bg:#0f1724;
       --card:#0b1220;
       --accent:#7dd3fc;
       --muted:#94a3b8;
@@ -49,7 +49,6 @@
 
     footer{margin-top:36px;padding:18px;text-align:center;color:var(--muted)}
 
-    /* responsive */
     @media (max-width:980px){
       .hero{grid-template-columns:1fr 320px}
       .grid{grid-template-columns:repeat(2,1fr)}
@@ -75,24 +74,21 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <section class="hero">
       <div class="card intro">
         <h1>Hi — I’m Nihad. I build web apps and explore AI.</h1>
-        <p>I’m a second-year university student who loves building small, useful projects and learning practical AI techniques. Currently working with React, Flask, RISC-V, and Python.</p>
+        <p>I’m a third-year university student who loves building small, useful projects and learning practical AI techniques. Currently working with React, Flask, and Python.</p>
         <div class="cta">
           <a class="btn" href="#projects">See my work</a>
-          <a class="btn" style="margin-left:12px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)" href="#contact">Contact me</a>
         </div>
 
         <div class="skills" style="margin-top:18px">
           <div class="skill">React</div>
           <div class="skill">Python</div>
           <div class="skill">Flask</div>
-          <div class="skill">RISC-V</div>
           <div class="skill">Git</div>
         </div>
       </div>
@@ -102,7 +98,6 @@
         <div style="font-weight:800;margin-top:8px">Nihad Miraoui</div>
         <div class="meta">Algeria • nihad@example.com</div>
         <div style="margin-top:12px">
-          <a href="#contact" class="btn" style="padding:8px 12px;font-size:14px">Hire / Collaborate</a>
         </div>
       </aside>
     </section>
@@ -111,29 +106,28 @@
       <h2 style="margin-bottom:12px">Selected projects</h2>
       <div class="grid">
         <article class="proj card">
-          <h3>Healthy Food Recommender</h3>
-          <p>A web app that suggests weekly meal plans using AI search and CSP techniques. Includes a React frontend and Flask backend.</p>
+          <h3>Healthy Food AI Recommendation App</h3>
+          <p>A web app that recommends weekly meal plans based on user preferences using AI search and constraint satisfaction techniques. Built with React and Flask.</p>
           <div class="tags">
             <span class="tag">React</span><span class="tag">Flask</span><span class="tag">AI</span>
           </div>
         </article>
 
         <article class="proj card">
-          <h3>RISC-V Labs</h3>
-          <p>Collection of assembly programs and exercises: arrays, calling conventions, and Quicksort implementation on RISC-V.</p>
+          <h3>Art Auction Website</h3>
+          <p>An online auction platform for artists and buyers. Includes bidding, user authentication, and review features implemented with PHP and MySQL.</p>
           <div class="tags">
-            <span class="tag">RISC-V</span><span class="tag">Assembly</span>
+            <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Web App</span>
           </div>
         </article>
 
         <article class="proj card">
-          <h3>Traffic Light Simulation</h3>
-          <p>Hardware simulation using Logisim-Evolution: a 4-sided traffic light controller with counters and 7-seg displays.</p>
+          <h3>Mobile App Project</h3>
+          <p>A Flutter-based mobile app demonstrating UI design, state management, and local data handling across multiple screens.</p>
           <div class="tags">
-            <span class="tag">Logisim</span><span class="tag">Digital Design</span>
+            <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Mobile</span>
           </div>
         </article>
-
       </div>
     </section>
 
@@ -141,34 +135,14 @@
       <h2>Skills & Tools</h2>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
         <div class="card" style="padding:12px">Java • C • Python • JavaScript • React • Flask • Git • SQL</div>
-        <div class="card" style="padding:12px">RISC-V • Logisim • AI Search • Genetic Algorithms • CSP</div>
+        <div class="card" style="padding:12px">AI Search • Flutter • HTML • CSS • C++ • OOP • Web Development</div>
       </div>
     </section>
 
-    <section id="contact" style="margin-top:20px">
-      <h2>Contact</h2>
-      <div class="card" style="display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:12px">
-        <form action="mailto:nihad@example.com" method="post" enctype="text/plain" style="display:flex;flex-direction:column;gap:10px">
-          <input placeholder="Your name" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
-          <input placeholder="Email" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
-          <textarea placeholder="Message" rows="5" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
-          <div style="display:flex;gap:10px;align-items:center">
-            <button class="btn" type="submit">Send</button>
-            <a class="btn" href="mailto:nihad@example.com" style="background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)">Email</a>
-          </div>
-        </form>
-
-        <aside style="padding:18px">
-          <h3 style="margin:0 0 8px 0">Get in touch</h3>
-          <p style="color:var(--muted);margin-top:6px">You can also find me on:</p>
-          <p style="margin-top:10px;color:var(--muted)">GitHub: <a href="https://github.com/" style="color:var(--accent)">github.com/nihad</a></p>
-          <p style="margin-top:6px;color:var(--muted)">LinkedIn: <a href="#" style="color:var(--accent)">linkedin.com/in/nihad</a></p>
-        </aside>
-      </div>
-    </section>
+   
 
     <footer>
-      <div style="opacity:0.8">© <span id="year"></span> Nihad Miraoui — Built with ❤️</div>
+      <div style="opacity:0.8">© <span id="year"></span> Nihad Meriem Miraoui</div>
     </footer>
   </div>
 
